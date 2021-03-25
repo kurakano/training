@@ -1,0 +1,199 @@
+/* -------------------------------------------- */
+/* 写真詳細 全体 */
+/* -------------------------------------------- */
+.photo-detail-container{
+    display: block;
+    /* background-color: #eee; */
+    margin-left: 10px;
+    padding: 30px;
+}
+
+/* -------------------------------------------- */
+/* 写真 */
+/* -------------------------------------------- */
+.photo-main{
+    display: flex;
+    margin-bottom: 10px;
+}
+.photo-area{
+    display: block;
+    background-color: #f4eaff;
+    border: solid #7e1083;
+    width: 400px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.photo-area img{
+    width: 400px;
+    
+}
+
+.photo-info-area{
+    background-color: #fff;
+    border: solid #eedcb3;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.photo-info-area .photo-title{
+    background-color: #fff;
+    font-weight: bold;
+    text-align: center;
+    
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border: 3px solid #eedcb3;
+    border-right: 20px solid #eedcb3;
+    border-left: 20px solid #eedcb3;
+    
+}
+
+.photo-subtitle{
+    display: inline-block;
+    background-color: #eedcb3;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    margin: 10px 0 30px 10px;
+    border-radius: 15px; 
+}
+
+.photo-pose-favorite{
+    display:block;
+    height: 120px;
+}
+
+.photo-pose{
+    display: inline-block;
+    background-color: #eedcb3;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    float: left;
+}
+
+.photo-favorite{
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    float: right;
+}
+
+.photo-favorite.on{
+    background-color: gold;
+}
+
+.photo-favorite.off{
+    background-color: lightgray;
+}
+
+.photo-comp{
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    float: right;
+}
+
+.photo-comp.on{
+    background-color: firebrick;
+}
+
+.photo-comp.off{
+    background-color: lightgray;
+}
+
+
+.photo-hashtag li{
+    display: inline-block;
+    font-weight: bold;
+    background-color: #fff;
+    color: #7e1083;
+    padding: 5px 20px 5px 20px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid #7e1083; 
+}
+
+.same-photo-area {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.same-photo-title {
+    display: block;
+    background-color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0 10px 30px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #7e1083;
+    border-left: 10px solid #7e1083;
+}
+
+.photos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* -------------------------------------------- */
+/* 写真表示部分 個別 */
+/* -------------------------------------------- */
+.photo-container {
+    width: 150px;
+    /*background-color: #555;*/
+    background-color: #f4eaff;
+    border: solid #7e1083;
+    border-radius: 10px;
+    margin: 0 15px 20px 0;
+    padding: 5px 10px;
+}
+
+.photo-container p {
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    /*background-color: #fff;*/
+    background-color: #7e1083;
+    color: #fff;
+    font-size: 15px;
+    margin: 0 0 0 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.photo-container img {
+    width: 150px;
+}
+
+.photo-container .caption1 {
+    width: 100%;
+    font-size: 10px;
+}
+
+.photo-container .photo-title {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}

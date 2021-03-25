@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------------------- */
+/* ヘッダ */
+/* -------------------------------------------- */
+#header{
+    height: 84px;
+    background-color: #fff;
+}
+
+#logo {
+    width: 320px;
+    height: 84px;
+    background-image:url("../img/common/logo.jpg");
+    background-repeat:no-repeat;		/*背景画像を繰り返さない*/
+    float: left;
+}
+
+#logo a {
+    display: block;
+    height: 84px;
+    text-decoration: none;
+}
+
+#title {
+    font-size: 30px;/* フォントサイズ */
+    font-weight: bold;/* フォント太さ */   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    color: #7e1083;
+	font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+    float: left;
+}
+
+#login {
+    font-size: 20px;/* フォントサイズ */   
+    padding-top:30px;
+    padding-bottom: 40px;
+    margin-right: 20px;
+    color: #7e1083;
+    font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+    float: right;
+}
+#login a {
+    text-decoration: none;
+}
+
+/* -------------------------------------------- */
+/* グローバル ナビゲーション */
+/* -------------------------------------------- */
+.glovalNav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.glovalNav ul li {
+	display: table-cell;
+	box-sizing: border-box;
+}
+
+.glovalNav ul li a {
+	display: block;
+	padding: .4em .8em;
+	text-decoration: none;
+	color: #333;
+	background: #fff;
+	text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.glovalNav ul li a.current{
+    background: #f4eaff;
+    border-bottom: 3px solid #7e1083;
+}
+
+.glovalNav ul li a:hover {
+	background: #f4eaff;
+    border-bottom: 3px solid #7e1083;
+}
+
+.glovalNav ul li span {
+	display: block;
+	font-size: 10px;
+    color: #777;
+}
+
+/* -------------------------------------------- */
+/* メイン */
+/* -------------------------------------------- */
+main{
+    display: flex;
+    min-height: 90vh;
+    margin: 10px 0 10px 0;
+}
+
+/* -------------------------------------------- */
+/* コンテンツ */
+/* -------------------------------------------- */
+.content{
+    flex: 1;
+   /*  background-color: #eee; */
+    margin-left: 10px;
+    padding: 30px;
+}
+
+.localNavigation{
+    text-align: center;
+    background-color: #888;
+    color: #fff;
+    width: 250px;
+}
+
+.footer{
+    height: 70px;
+    font-size: 10px;
+    text-align: center;
+    color: #777;
+    background-color: #f4eaff;
+    border-top: solid #7e1083;
+}
