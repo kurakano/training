@@ -17,15 +17,13 @@
 }
 .photo-area{
     display: block;
-    background-color: #f4eaff;
-    border: solid #7e1083;
-    width: 400px;
-    margin-left: 10px;
-    padding: 20px;
 }
 
 .photo-area img{
-    width: 400px;
+    width: 300px;
+    background-color: #f4eaff;
+    border: solid #7e1083;
+    padding: 20px;
     
 }
 
@@ -132,6 +130,29 @@
     margin-bottom: 20px;
     border-radius: 20px;
     border: 2px solid #7e1083; 
+}
+
+.btn-area {
+    display: block;
+    text-align: center;
+}
+
+.btn-area table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+    background-color: #f4eaff;
+    border: 2px solid #7e1083; 
+}
+
+.btn-area td {
+    font-weight: bold;
+    background-color: #7e1083;
+    color: #fff;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    
 }
 
 .same-photo-area {

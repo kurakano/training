@@ -1,7 +1,9 @@
 @extends('layouts.template_common')
 
 @section('title', '写真詳細')
-@section('css', 'photo_detail')
+@section('css')
+    {{ asset('css/photo_detail.css') }}
+@endsection
 
 @section('content')
 <div class="photo-detail-container">
@@ -25,6 +27,19 @@
                 <li>#まいやん</li>
                 <li>#25thシングル</li>
                 <li>#しあわせの保護色</li>
+            </div>
+
+            <div class="btn-area">
+                <table>
+                    <tr>
+                        <td>編集</td>
+                        <td>コンプ詳細</td>
+                    </tr>
+                    <tr>
+                        <td>一覧に戻る</td>
+                        <td>削除</td>
+                    </tr>
+                </table>
             </div>
             
         </div>

@@ -1,7 +1,9 @@
 @extends('layouts.template_common')
 
 @section('title', '写真一覧')
-@section('css', 'photo_list')
+@section('css')
+    {{ asset('css/photo_list.css') }}
+@endsection
 
 @section('content')
 <div class="photo-list-container">
@@ -55,7 +57,7 @@
     <div class="photos-container">
         <div class="photo-container">
             <p>ヨリ</p>
-            <a href="#"><img src="<?php echo url('assets/photo/photo_img.jpg');?>" alt="写真画像"></a>
+            <a href="{{ action('PhotoController@detail') }}"><img src="<?php echo url('assets/photo/photo_img.jpg');?>" alt="写真画像"></a>
             <div class="caption1">2021.January-III</div>
             <div class="photo-title">ジャケットセットアップ</div>
         </div>
@@ -116,4 +118,11 @@
         <li><a href="#">&raquo;</a></li>
     </div>
 </div>
+
+<script>
+    $(function(){
+        $('.glovalNav .photo-list').addClass("current");
+        $('.glovalNav .photo-list').attr('href', '#');
+    });
+</script>
 @endsection

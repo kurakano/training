@@ -17,5 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('photo_list', 'PhotoController@index');
-Route::get('photo_detail', 'PhotoController@detail');
+// TOP
+Route::get('/top', 'TopController@index');
+
+// 写真一覧
+Route::get('/photo/list', 'PhotoController@index');
+Route::get('/photo/detail', 'PhotoController@detail');
+
+// コンプ一覧
+//Route::get('/comp/list', 'PhotoController@index');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
