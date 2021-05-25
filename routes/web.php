@@ -24,6 +24,9 @@ Route::get('/top', 'TopController@index');
 Route::get('/photo/list', 'PhotoController@index');
 Route::get('/photo/detail', 'PhotoController@detail');
 
+// 登録
+Route::get('/register/top', 'RegisterController@index');
+
 // コンプ一覧
 //Route::get('/comp/list', 'PhotoController@index');
 Auth::routes();

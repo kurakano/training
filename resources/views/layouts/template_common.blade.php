@@ -25,7 +25,7 @@
             <li><a class="top" href="{{ action('TopController@index') }}">トップ<span>TOP</span></a></li>
             <li><a class="photo-list" href="{{ action('PhotoController@index') }}">写真一覧<span>PHOTO LIST</span></a></li>
             <li><a class="comp-list" href="#">コンプ一覧<span>COMPLETE LIST</span></a></li>
-            <li><a class="register" href="#">写真登録<span>REGISTER</span></a></li>
+            <li><a class="register" href="{{ action('RegisterController@index') }}">登録<span>REGISTER</span></a></li>
             <li><a class="schedule" href="#">スケジュール<span>SCHEDULE</span></a></li>
         </ul>
     </div>

@@ -1,0 +1,157 @@
+/* -------------------------------------------- */
+/* 登録 全体 */
+/* -------------------------------------------- */
+.register-container{
+    display: block;
+    background-color: #eee;
+    width: 100%;
+    margin-left: 10px;
+    padding: 30px;
+}
+
+.register-title {
+    display: block;
+    background-color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0 10px 30px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #7e1083;
+    border-left: 10px solid #7e1083;
+}
+
+.register-contents-area {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+/* -------------------------------------------- */
+/* 写真アップロード */
+/* -------------------------------------------- */
+
+.btn-photo-register {
+    display: inline-block;
+    font-weight: bold;
+    background-color: #7e1083;
+    color: #fff;
+    margin: 15px;
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+/* -------------------------------------------- */
+/* マスタ一覧 */
+/* -------------------------------------------- */
+
+.tab-master-category ul {
+    background-color: #fff;
+	list-style: none;
+	padding: 0;
+    margin: 0;
+    display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.tab-master-category ul li {
+	display: table-cell;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+	box-sizing: border-box;
+}
+
+.tab-master-category ul li.selected {
+    background: #7e1083;
+    color: #fff;
+}
+
+.tab-master-category ul li.not-select:hover {
+	background: #f4eaff;
+}
+
+.master-area {
+    display: block;
+    background: #fff;
+    padding: 10px;
+    border: solid 2px #7e1083;
+}
+
+.register-label {
+    display: block;
+    background-color: #7e1083;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px 0 5px 20px;
+    position: relative;
+}
+
+.register-label:after {
+    background-color: #f4eaff;
+    color: #7e1083;
+    content: attr(data-icon);
+    box-sizing: border-box;
+    display: block;
+    font-size: 15px;
+    padding: 5px 15px 5px 15px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.new-register-area {
+    display: none;
+    background: #f4eaff;
+    padding: 10px;
+}
+
+.master-table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    border: solid 2px #fff;
+    margin-top: 10px;
+}
+
+.master-table th {
+    background: #7e1083;
+    color: #fff;
+}
+
+.master-table th, .master-table td {
+    border-right: solid 1px #d3b2f7;
+    border-left: solid 1px #d3b2f7;
+}
+
+.master-table tr:nth-child(odd) td {
+	background: #eee;
+}
+
+.master-table td.pose {
+    white-space: nowrap;
+    overflow: scroll;
+    max-width: 0; 
+}
+
+.master-table td.pose::-webkit-scrollbar {
+    display: none;
+}
+
+.color-box {
+    display: block;
+    background-color: #7e1083;
+    margin: 5px;
+    padding: 0 5px 0 5px;
+}
+
+.btn-edit {
+    display: inline-block;
+    background-color: green;
+    color: #fff;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 0 5px 0 5px;
+}
