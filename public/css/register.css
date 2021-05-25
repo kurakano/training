@@ -3,7 +3,7 @@
 /* -------------------------------------------- */
 .register-container{
     display: block;
-    background-color: #eee;
+    /* background-color: #eee; */
     width: 100%;
     margin-left: 10px;
     padding: 30px;
@@ -90,22 +90,53 @@
 }
 
 .register-label:after {
+    text-align: center;
     background-color: #f4eaff;
     color: #7e1083;
     content: attr(data-icon);
-    box-sizing: border-box;
     display: block;
+    width: 10px;
     font-size: 15px;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px 5px 10px;
     position: absolute;
     right: 0;
-    top: 0px;
+    top: 0;
 }
 
 .new-register-area {
     display: none;
     background: #f4eaff;
     padding: 10px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+    /*background-color: #222;*/ 
+}
+
+.input-container .input-title {
+    display: inline-block;
+    background-color: #7e1083;
+    color: #fff;
+    padding: 5px 5px;
+}
+
+.input-container select, .input-container input {
+    background-color: #fff;
+    font-size: 20px;
+    border: solid #7e1083;
+    margin-right: 50px;
+}
+
+.btn-submit {
+    display: inline-block;
+    background-color: #7e1083;
+    color: #fff;
+    padding: 5px 25px 5px 25px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 .master-table {

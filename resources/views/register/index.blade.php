@@ -10,7 +10,7 @@
     <!-- 写真アップロード -->
     <div class="register-title">写真登録</div>
     <div class="register-contents-area">
-        <div class="btn-photo-register">写真をアップロード</div>
+        <a href="#"><div class="btn-photo-register">写真をアップロード</div></a>
     </div>
     <!-- 写真アップロード END -->
 
@@ -26,9 +26,33 @@
         </div>
         <!-- シリーズマスタ -->
         <div class="master-area series-master">
-            <div class="register-label" data-icon="+">シリーズを新規登録</div>
+            <div class="register-label" data-icon="＋">シリーズを新規登録</div>
             <div class="new-register-area">
-                シリーズを新規登録
+                <div class="input-container">
+                    <div class="input-title">年</div>
+                    <input type="text" name="series-year" style="width:3em;" value="2021" maxlength="4">
+                    <div class="input-title">月</div>
+                    <select>
+                        @for( $i = 1; $i <= 12; $i++ )
+                            <option value="{{ $i }}">{{ $i }}</option>
+                        @endfor
+                    </select>
+                    <div class="input-title">No.</div>
+                    <input type="text" name="series-no" style="width:2em;" maxlength="2">
+                    <div class="input-title">ポーズ</div>
+                    <select>
+                        <option value="1">ヨリ</option>
+                        <option value="2">チュウ</option>
+                        <option value="3">ヒキ</option>
+                        <option value="4">座りヨリ</option>
+                        <option value="5">座りヒキ</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <div class="input-title">シリーズカラー</div>
+                    <input type="text" name="series-color" style="width:5em;" maxlength="10">
+                </div>
+                <a href="#"><div class="btn-submit">登録</div></a>
             </div>
             <table class="master-table">
                 <tr>
@@ -49,7 +73,7 @@
                     <td>1</td>
                     <td class="pose">ヨリ, チュウ, ヒキヨリ, チュウ, ヒキ</td>
                     <td><div class="color-box">　</div></td>
-                    <td><div class="btn-edit">編集</div></td>
+                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>1</td>
@@ -59,7 +83,7 @@
                     <td>1</td>
                     <td class="pose">ヨリ, チュウ, ヒキヨリ, チュウ, ヒキ</td>
                     <td><div class="color-box">　</div></td>
-                    <td><div class="btn-edit">編集</div></td>
+                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>1</td>
@@ -69,13 +93,17 @@
                     <td>1</td>
                     <td class="pose">ヨリ, チュウ, ヒキヨリ, チュウ, ヒキ</td>
                     <td><div class="color-box">　</div></td>
-                    <td><div class="btn-edit">編集</div></td>
+                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
                 </tr>
             </table>
         </div>
 
         <!-- ポーズマスタ -->
         <div class="master-area pose-master">
+            <div class="register-label" data-icon="＋">ポーズを新規登録</div>
+            <div class="new-register-area">
+                ポーズを新規登録
+            </div>
             <table class="master-table">
                 <tr>
                     <th>ID</th>
@@ -85,23 +113,27 @@
                 <tr>
                     <td>1</td>
                     <td>ヨリ</td>
-                    <td><div class="btn-edit">編集</div></td>
+                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>チュウ</td>
-                    <td><div class="btn-edit">編集</div></td>
+                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>ヒキ</td>
-                    <td><div class="btn-edit">編集</div></td>
+                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
                 </tr>
             </table>
         </div>
 
         <!-- メンバーマスタ -->
         <div class="master-area member-master">
+            <div class="register-label" data-icon="＋">メンバーを新規登録</div>
+            <div class="new-register-area">
+                メンバーを新規登録
+            </div>
             <table class="master-table">
                 <tr>
                     <th>ID</th>
@@ -115,21 +147,21 @@
                     <td>金川紗耶</td>
                     <td>カナガワサヤ</td>
                     <td>KANAGAWASAYA</td>
-                    <td><div class="btn-edit">編集</div></td>
+                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>金川紗耶</td>
                     <td>カナガワサヤ</td>
                     <td>KANAGAWASAYA</td>
-                    <td><div class="btn-edit">編集</div></td>
+                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>金川紗耶</td>
                     <td>カナガワサヤ</td>
                     <td>KANAGAWASAYA</td>
-                    <td><div class="btn-edit">編集</div></td>
+                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
                 </tr>
             </table>
         </div>
@@ -161,11 +193,11 @@
         $('.register-label').each(function(){
             $(this).on('click',function(){
                 $("+.new-register-area",this).slideToggle();
-                if($(this).attr('data-icon') == '+') {
-                    $(this).attr('data-icon', '-');
+                if($(this).attr('data-icon') == '＋') {
+                    $(this).attr('data-icon', 'ー');
                 }
                 else {
-                    $(this).attr('data-icon', '+');
+                    $(this).attr('data-icon', '＋');
                 }
                 return false;
             });
