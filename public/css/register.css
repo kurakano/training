@@ -139,6 +139,30 @@
     border-radius: 10px;
 }
 
+.confirm-txt {
+    color: #7e1083;
+}
+
+.btn-area {
+    display: block;
+    text-align: center;
+}
+
+.btn-area table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+}
+
+.btn-area td {
+    font-weight: bold;
+    background-color: #7e1083;
+    color: #fff;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    border-radius: 10px;    
+}
+
 .master-table {
     width: 100%;
     background: #fff;
