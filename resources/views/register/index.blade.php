@@ -52,7 +52,17 @@
                 </div>
                 <div class="input-container">
                     <div class="input-title">シリーズカラー</div>
-                    <input type="text" name="series-color" style="width:5em;" maxlength="10">
+                    <div class="color-preview"><div class="color-box">　</div></div>
+                </div>
+                
+                <div class="input-container">
+                    <label class="btn-file-select" for="file_photo">写真を選択
+                        <input type="file" id="file_photo" accept='image/*' style="display:none;" onchange="previewImage(this);">
+                    </label>
+                </div>
+
+                <div class="input-container">
+                    <canvas id="demo_canvas" width=0 height=0></canvas>
                 </div>
 
                 <div class="display-submit-btn">
@@ -402,5 +412,39 @@
         }
 
     });
+
+    function previewImage(obj) {
+        var fileReader = new FileReader();
+        fileReader.onload = (function() {
+            var canvas = document.getElementById('demo_canvas');
+            var ctx = canvas.getContext('2d');
+            var image = new Image();
+            image.src = fileReader.result;
+            image.onload = (function () {
+                width = 200;
+                height = width * image.height / image.width;
+                canvas.width = width;
+                canvas.height = height;
+                ctx.drawImage(image, 0, 0, width, height);
+            });
+        });
+        fileReader.readAsDataURL(obj.files[0]);
+    }
+
+    $('#demo_canvas').click(function(mouseEvent) {
+        //クリックされた座標のピクセルデータを取得する
+        var canvas = document.getElementById('demo_canvas');
+        var ctx = canvas.getContext('2d');
+        var imgData = ctx.getImageData(mouseEvent.offsetX, mouseEvent.offsetY, 1, 1);
+        var rgba = imgData.data;
+
+        //rgbaからカラーコードを取得
+        red = rgba[0].toString(16).replace(/(^[0-9a-f]{1}$)/, '0$1');
+        green = rgba[1].toString(16).replace(/(^[0-9a-f]{1}$)/, '0$1');
+        blue = rgba[2].toString(16).replace(/(^[0-9a-f]{1}$)/, '0$1');
+        color_code = '#' + red + green + blue;
+        
+        $('.color-preview .color-box').css('background-color', color_code);
+    })
 </script>
 @endsection

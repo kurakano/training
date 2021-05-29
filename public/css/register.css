@@ -129,6 +129,20 @@
     margin-right: 50px;
 }
 
+.btn-file-select {
+    background-color: #7e1083;
+    color: #fff;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.color-preview {
+    display: block;
+    width: 100px;
+    background-color: #fff;
+    border: solid #7e1083;
+}
+
 .btn-submit {
     display: inline-block;
     background-color: #7e1083;
