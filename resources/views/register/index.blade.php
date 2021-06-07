@@ -250,6 +250,7 @@
 </div>
 
 <script>
+    color_code = '#7e1083';
     $(function(){
         $('.glovalNav .register').addClass("current");
         $('.glovalNav .register').attr('href', '#');
@@ -314,7 +315,7 @@
                         $(this).parent().parent().parent().find('.input-container').css('display', 'none');
                         $(this).parent().parent().parent().find('.display-confirm').css('display', 'block');
                         confirm_series_no = ($('input[name="series-no"]').val() != "") ? ' No.'+$('input[name="series-no"]').val() : '';
-                        confirm_txt = $('input[name="series-year"]').val()+'年 '+$('select[name="series-month"]').val()+'月'+confirm_series_no+'<br>ポーズ：'+getSeriesPoses().join(",");
+                        confirm_txt = $('input[name="series-year"]').val()+'年 '+$('select[name="series-month"]').val()+'月'+confirm_series_no+'<br>ポーズ：'+getSeriesPoses().join(",")+'<br>シリーズカラー：'+color_code;
                         $(this).parent().parent().parent().find('.display-confirm .confirm-txt.input-data').html(confirm_txt);
                     }
                 }
