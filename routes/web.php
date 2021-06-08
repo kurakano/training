@@ -26,6 +26,9 @@ Route::get('/photo/detail', 'PhotoController@detail');
 
 // 登録
 Route::get('/register/top', 'RegisterController@index');
+Route::get('/register/edit/series', 'RegisterController@edit_series');
+Route::get('/register/edit/pose', 'RegisterController@edit_pose');
+Route::get('/register/edit/member', 'RegisterController@edit_member');
 
 // コンプ一覧
 //Route::get('/comp/list', 'PhotoController@index');

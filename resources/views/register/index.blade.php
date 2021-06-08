@@ -102,7 +102,7 @@
                     <td>1</td>
                     <td class="pose">ヨリ, チュウ, ヒキヨリ, チュウ, ヒキ</td>
                     <td><div class="color-box">　</div></td>
-                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
+                    <td><a href="{{ action('RegisterController@edit_series') }}"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>1</td>
@@ -112,7 +112,7 @@
                     <td>1</td>
                     <td class="pose">ヨリ, チュウ, ヒキヨリ, チュウ, ヒキ</td>
                     <td><div class="color-box">　</div></td>
-                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
+                    <td><a href="{{ action('RegisterController@edit_series') }}"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>1</td>
@@ -122,7 +122,7 @@
                     <td>1</td>
                     <td class="pose">ヨリ, チュウ, ヒキヨリ, チュウ, ヒキ</td>
                     <td><div class="color-box">　</div></td>
-                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
+                    <td><a href="{{ action('RegisterController@edit_series') }}"><div class="btn-edit">編集</div></a></td>
                 </tr>
             </table>
         </div>
@@ -163,17 +163,17 @@
                 <tr>
                     <td>1</td>
                     <td>ヨリ</td>
-                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
+                    <td><a href="{{ action('RegisterController@edit_pose') }}"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>チュウ</td>
-                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
+                    <td><a href="{{ action('RegisterController@edit_pose') }}"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>ヒキ</td>
-                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
+                    <td><a href="{{ action('RegisterController@edit_pose') }}"><div class="btn-edit">編集</div></a></td>
                 </tr>
             </table>
         </div>
@@ -226,21 +226,21 @@
                     <td>金川紗耶</td>
                     <td>カナガワサヤ</td>
                     <td>KANAGAWASAYA</td>
-                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
+                    <td><a href="{{ action('RegisterController@edit_member') }}"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>金川紗耶</td>
                     <td>カナガワサヤ</td>
                     <td>KANAGAWASAYA</td>
-                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
+                    <td><a href="{{ action('RegisterController@edit_member') }}"><div class="btn-edit">編集</div></a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>金川紗耶</td>
                     <td>カナガワサヤ</td>
                     <td>KANAGAWASAYA</td>
-                    <td><a href="#"><div class="btn-edit">編集</div></a></td>
+                    <td><a href="{{ action('RegisterController@edit_member') }}"><div class="btn-edit">編集</div></a></td>
                 </tr>
             </table>
         </div>
