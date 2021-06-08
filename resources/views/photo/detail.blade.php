@@ -9,7 +9,7 @@
 <div class="photo-detail-container">
     <div class="photo-main">
         <div class="photo-area">
-            <img src="<?php echo url('assets/photo/photo_img.jpg');?>" alt="写真画像">
+            <img src="{{ asset('assets/photo/photo_img.jpg') }}" alt="写真画像">
         </div>
         <div class="photo-info-area">
             <div class="photo-subtitle">2021.January-III</div>

@@ -73,6 +73,8 @@
     </div>
     <!-- シリーズマスタ編集 END -->
 
+    <a href="{{ action('RegisterController@index') }}"><div class="btn-back">戻る</div></a>
+
 </div>
 
 <script>
@@ -134,7 +136,6 @@
             series_month = $('select[name="series-month"]').val();
             series_no = $('input[name="series-no"]').val();
             series_poses = getSeriesPoses();
-            //TODO: シリーズカラー
 
             if(series_year != "" && series_month != "" && series_poses.length > 0) {
                 console.log('OK');

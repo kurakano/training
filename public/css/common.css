@@ -139,3 +139,16 @@ main{
     background-color: #f4eaff;
     border-top: solid #7e1083;
 }
+
+/* -------------------------------------------- */
+/* ボタン */
+/* -------------------------------------------- */
+.btn-back {
+    display: inline-block;
+    background-color: #7e1083;
+    color: #fff;
+    padding: 5px 25px 5px 25px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}

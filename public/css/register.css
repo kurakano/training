@@ -27,7 +27,7 @@
 }
 
 /* -------------------------------------------- */
-/* 写真アップロード */
+/* 写真登録 */
 /* -------------------------------------------- */
 
 .btn-photo-register {
@@ -223,4 +223,41 @@
     border-radius: 7px;
     margin: 5px;
     padding: 0 5px 0 5px;
+}
+
+/* -------------------------------------------- */
+/* 写真アップロード */
+/* -------------------------------------------- */
+
+.btn-plus {
+    display: inline-block;
+    background-color: #7e1083;
+    color: #fff;
+    padding: 2px 5px 2px 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.input-hashtag {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input-hashtag input {
+    margin-right: 10px;
+}
+
+.upload-photo-area{
+    display: block;
+}
+
+.upload-photo-area img{
+    width: 300px;
+    background-color: #fff;
+    border: solid #7e1083;
+    padding: 20px;
+    
 }

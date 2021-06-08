@@ -49,6 +49,8 @@
     </div>
     <!-- メンバーマスタ編集 END -->
 
+    <a href="{{ action('RegisterController@index') }}"><div class="btn-back">戻る</div></a>
+
 </div>
 
 <script>

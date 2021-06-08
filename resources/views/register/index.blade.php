@@ -10,7 +10,7 @@
     <!-- 写真アップロード -->
     <div class="register-title">写真登録</div>
     <div class="register-contents-area">
-        <a href="#"><div class="btn-photo-register">写真をアップロード</div></a>
+        <a href="{{ action('RegisterController@upload_photo') }}"><div class="btn-photo-register">写真をアップロード</div></a>
     </div>
     <!-- 写真アップロード END -->
 
@@ -379,7 +379,6 @@
             series_month = $('select[name="series-month"]').val();
             series_no = $('input[name="series-no"]').val();
             series_poses = getSeriesPoses();
-            //TODO: シリーズカラー
 
             if(series_year != "" && series_month != "" && series_poses.length > 0) {
                 console.log('OK');

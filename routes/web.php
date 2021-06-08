@@ -29,6 +29,7 @@ Route::get('/comp/list', 'CompController@index');
 
 // 登録
 Route::get('/register/top', 'RegisterController@index');
+Route::get('/register/upload', 'RegisterController@upload_photo');
 Route::get('/register/edit/series', 'RegisterController@edit_series');
 Route::get('/register/edit/pose', 'RegisterController@edit_pose');
 Route::get('/register/edit/member', 'RegisterController@edit_member');

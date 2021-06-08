@@ -13,6 +13,13 @@ class RegisterController extends Controller
         return View('register.index', $data);
     }
 
+    public function upload_photo(Request $request) {
+
+        $data = array();
+
+        return View('register.upload', $data);
+    }
+
     public function edit_series(Request $request) {
 
         $data = array();
